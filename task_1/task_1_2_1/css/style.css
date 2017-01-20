@@ -1,0 +1,37 @@
+body{
+    background-color: rgba(0, 0, 0, 0.16);
+}
+header{
+    background-color:#000000 ;
+    height: 70px;
+
+}
+nav{
+    height: 70px;
+}
+nav img{
+    display: inline;
+    height: 70px;
+}
+.header{
+    display: inline;
+    position:relative;
+    width:100%;
+    height:auto;
+    margin:0;
+    padding:0;
+}
+nav ul{
+    float: right;
+}
+table{border:1px solid #F00}
+article{
+    background-color: #fff;
+    margin: 10px;
+}
+#myfrom{
+    text-align:center
+}
+.tip{
+    color: rgba(106, 106, 106, 0.91);
+}
