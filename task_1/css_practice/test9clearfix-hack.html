@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            display: block;
+            border: solid #6AC5AC 3px;
+        }
+        img{
+            float: right;
+        }
+        .clearfix{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+<div>
+    不......这个图片比包含它的元素还高， 而且它是浮动的，于是它就溢出到了容器外面！
+    <img src="ilta.png">
+</div>
+<div class="clearfix">
+    <img src="ilta.png">
+</div>
+</body>
+</html>
