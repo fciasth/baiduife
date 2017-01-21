@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            position: relative;
+            border: solid #6AC5AC 3px;
+        }
+        nav{
+            position: absolute;
+            left: 0;
+            width: 200px;
+            border: solid #c5306f 3px;
+        }
+        section{
+            margin-left:200px ;
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 70px;
+            width: 100%;
+            border: solid #c5bc57 3px;
+        }
+        body{
+            margin-bottom: 120px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <ul><li>1</li></ul>
+        <ul><li>1</li></ul>
+        <ul><li>1</li></ul>
+        <ul><li>1</li></ul>
+    </nav>
+    <section>section 的 margin-left 样式确保了有足够的空间容纳 nav 元素。</section>
+    <section>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio,
+        vitae scelerisque enim ligula venenatis dolor.
+        Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
+        Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio.
+        Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+        Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
+        In at libero sed nunc venenatis imperdiet sed ornare turpis.
+        Donec vitae dui eget tellus gravida venenatis.
+        Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.
+        Cras ac leo purus. Mauris quis diam velit.</section>
+    <section>注意观察当你调整浏览器窗口时发生了什么。效果很赞！</section>
+    <footer>如果你使用了一个固定定位的页眉或页脚，确保有足够的空间来显示它们！我在 body 上面加了 margin-bottom 。</footer>
+</div>
+</body>
+</html>
