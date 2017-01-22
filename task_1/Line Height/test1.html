@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .normal{
+            line-height: normal;
+        }
+        .inherit{
+            line-height: inherit;
+        }
+        .percent{
+            line-height: 220%;
+        }
+        .pxem{
+            line-height: 25px;
+        }
+        .num{
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body>
+<p class="normal">什么是行间距？<br>
+    古时候我们使用印刷机来出来文字。印刷出来的每个字，都位于独立的一个块中。</p>
+<p class="inherit">行间距，即传说中控制两行文字垂直距离的东东。在CSS中，line-height被用来控制行与行之间垂直距离。<br>
+    不过，行间距与半行间距，还是取决于CSS中的line-height。那么，如何来使用line-height呢？</p>
+<p class="percent">默认状态，浏览器使用1.0-1.2 line-height, 这是一个初始值。你可以定义line-height属性来覆盖初始值：p｛line-height:140%｝<br>
+    你可以有5种方式来定义line-height。</p>
+<p class="pxem">“你知道你为什么能赢吗？那是因为你20岁，他27岁。我不希望你到了27岁还这个样子。”<br> 这是电影《少年巴比伦》女主角白蓝对男主角路小路说的一句话。这句话，让我们看到了一个人的成长</p>
+<p class="num">1.line-height可以被定义为：body{line-height:normal;}
+
+    <br>2.line-height可以被定义为：body{line-height:inherit;}
+
+    <br>3.line-height可以使用一个百分比的值body{line-height:120%;}
+
+    <br>4.line-height可以被定义为一个长度值(px,em等) body{line-height:25px;}
+
+    <br>5.line-height也可以被定义为纯数字， body{line-height:1.2}</p>
+</body>
+</html>
