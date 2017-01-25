@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            padding: 15px 20px;
+            font-size: 14px;
+            color: #333;
+        }
+        .wrap{
+            border:blue solid 1px;
+            width: 600px;
+            margin: 30px auto 5px;
+        }
+        .main{
+            height: 60px;
+            width: 50%;
+            background: #FFE3D7;;
+        }
+        .side{
+
+            width: 20%;
+            background: lightblue;
+            height: 40px;
+        }
+        .left{
+              float: left;
+          }
+        .clear{
+            clear: both;
+        }
+        .foot{
+            border: 1px solid #CCC;
+            background: #EEE;
+            width: 600px;
+            margin: 5px auto 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="main left"></div>
+    <div class="side left"></div>
+</div>
+<div class="foot clear">.footer：我通过设置 clear:both 清除浮动,虽然位置正确了,但是 wrap 的高度没变,有些不爽</div>
+<div class="wrap">
+    <div class="main left"></div>
+    <div class="side left"></div>
+    <div style="clear:both;"></div>
+</div>
+<div class="foot clear">通过在浮动元素末尾添加一个空的标签例如 <div style="clear:both"></div>，其他标签br等亦可。</div>
+<div class="wrap">
+    <div class="main left"></div>
+    <div class="side left"></div>
+    <br clear="all">
+</div>
+<div class="foot clear">.footer 这个方法有些小众，br 有 clear=“all | left | right | none” 属性</div>
+<div class="wrap" style="overflow: hidden; *zoom:1;">
+    <div class="main left"></div>
+    <div class="side left"></div>
+    <br clear="all">
+</div>
+<div class="foot clear">通过设置父元素overflow值设置为hidden；在IE6中还需要触发 hasLayout ，例如 zoom：1；</div>
+<div class="wrap" style="overflow: auto; *zoom:1;">
+    <div class="main left"></div>
+    <div class="side left"></div>
+    <br clear="all">
+</div>
+<div class="foot clear">通过设置父元素overflow值设置为auto；在IE6中还需要触发 hasLayout ，例如 zoom：1；</div>
+<div class="wrap" style="float: left;">
+    <div class="main left"></div>
+    <div class="side left"></div>
+    <br clear="all">
+</div>
+<div class="foot clear">父元素也设置浮动</div>
+<div class="wrap" style="display:table;">
+    <div class="main left"></div>
+    <div class="side left"></div>
+    <br clear="all">
+</div>
+<div class="foot clear">父元素设置display:table</div>
+</body>
+</html>
