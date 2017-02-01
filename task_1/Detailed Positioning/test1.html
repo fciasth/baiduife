@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box-set{
+            background: aqua;
+        }
+        .box{
+            background: #8ec63f;
+            height: 100px;
+            float: left;
+            margin: 10px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="box-set">
+    <div class="box">Box 1</div>
+    <div class="box">Box 1</div>
+    <div class="box">Box 1</div>
+</div>
+虽然 浮动相当的给力，但他们自己还是存在一定的问题。最典型的问题就是一个父元素包含了多个浮动的子元素。页面的内容设置了一个宽度，子元素的浮动确定了他们的位置，但浮动元素不会影响父元素的宽度。这样做会让父元素塌陷，从而使父元素的高度为“0”，以及忽略其他的属性。很多时候，这种现像都被忽略，特别是在父元素没有任何样式，以及其子元素看起来都正确的对齐。
+
+嵌套的元素不会正确的排列，也会有错误的样式出现。来看看下面的演示，在“.box-set”的div应该有一个高亮的灰色背景，因为所有的子元素浮动后，这个灰色的背景色并不看到。仔细检查后，“.box-set”的高度变成了“0”。
+
+
+原文: http://www.w3cplus.com/css/advanced-html-css-lesson2-detailed-css-positioning.html © w3cplus.com
+</body>
+</html>
