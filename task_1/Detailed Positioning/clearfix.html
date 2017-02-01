@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box-set{
+            background: aqua;
+        }
+        .box-set:before,
+        .box-set:after{
+            content: "";
+            display: table;
+        }
+        .box-set:after{
+            clear: both;
+        }
+        .box{
+            background: #8ec63f;
+            height: 100px;
+            float: left;
+            margin: 10px;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box-set">
+    <div class="box">Box 1</div>
+    <div class="box">Box 1</div>
+    <div class="box">Box 1</div>
+    clearfix技巧
+
+    根据上下文，清除浮动更好的方法是clearfix技巧。“clearfix”清除浮动的技术是有点复杂，但有有比使用“overflow”技巧清除浮动更好的方法？
+
+    “clearfix”技巧是基于在父元素上使用“:before”和“:after”两个伪类。使用这些伪类，我们可以在浮动元素的父容器前面和后面创建隐藏元素。“:before”伪类是用来防止子元素顶部的外边距塌陷，使用“display: table”创建一个匿名的“table-cell”元素。这也确保在IE6和IE7下具有一致性。“:after”伪类是用来防止子元素的底部的外边距塌陷，以及用来清除元素的浮动。
+
+    原文: http://www.w3cplus.com/css/advanced-html-css-lesson2-detailed-css-positioning.html © w3cplus.com
+</div>
+</body>
+</html>
