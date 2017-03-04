@@ -7,9 +7,8 @@
 </head>
 <body>
 <header>
-
     <nav role="navigation" class="header">
-        <img src="./img/header.jpg" >
+        <img src="../task1_3_1/img/header.jpg" >
         <ul>
             <li class="header"><a href="#" >导航链接一</a></li>
             <li class="header"><a href="#" >导航链接二</a></li>
@@ -18,7 +17,8 @@
         </ul>
     </nav>
 </header>
-<article class="article">
+<main class="article">
+    <article>
     <h1>文章一级标题</h1>
     <h2>文章二级标题</h2>
     <h4>文章作者 文章发布时间</h4>
@@ -28,50 +28,110 @@
         <li>排名二</li>
         <li>排名三</li>
     </ol>
-    <table >
-        <tr>
-            <th>表头</th>
-            <th>表头</th>
-            <th>表头</th>
-        </tr>
-        <tr>
-            <td>23333</td>
-            <td>23333</td>
-            <td>23333</td>
-        </tr>
+    <table>
+        <thead>
+            <tr>
+                <th>表头</th>
+                <th>表头</th>
+                <th>表头</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+            <tr>
+                <td>表内容单元格</td>
+                <td>表内容单元格</td>
+                <td><a href="#">操作</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总计</td>
+                <td colspan="2">1000</td>
+            </tr>
+        </tfoot>
     </table>
+    </article>
+</main>
+<article>
+    <h2>图片</h2>
+    <dl>
+        <dt></dt>
+        <dd><span>好看的图片</span><br><img src="../task1_3_1/img/header.jpg"></dd>
+        <dd><span>好看的图片</span><br><img src="../task1_3_1/img/header.jpg"></dd>
+        <dd><span>好看的图片</span><br><img src="../task1_3_1/img/header.jpg"></dd>
+        <dd><span>好看的图片</span><br><img src="../task1_3_1/img/header.jpg"></dd>
+        <dd><span>好看的图片</span><br><img src="../task1_3_1/img/header.jpg"></dd>
+        <dd><span>好看的图片</span><br><img src="../task1_3_1/img/header.jpg"></dd>
+        <dd><span>好看的图片</span><br><img src="../task1_3_1/img/header.jpg"></dd>
+        <dd><span>好看的图片</span><br><img src="../task1_3_1/img/header.jpg"></dd>
+        <dd><span>好看的图片</span><br><img src="../task1_3_1/img/header.jpg"></dd>
+        <dd><span>好看的图片</span><br><img src="../task1_3_1/img/header.jpg"></dd>
+    </dl>
 </article>
 <article>
-    <div id="myfrom">
-        <from>
-            请输入邮箱地址
-            <input type="text">
-            <p class="tip">请按正确邮箱格式输入</p>
-            请输入密码
-            <input type="password" value="请输入密码">
-            <br>
-            请重复输入密码
-            <input type="password" value="请重复输入密码">
-            <p class="tip">请输入6-16位密码</p>
-            性别
-            <input type="radio" value="male" checked>男
-            <input type="radio" value="famale" checked>女
-            <br>
-            城市
-            <select>
-                <option value="北京">北京</option>
-                <option value="南京">南京</option>
-            </select>
-            <br>
-            爱好
-            <input type="checkbox">1
-            <br>
-            个人描述
-            <textarea>23333333333</textarea>
-            <br>
-            <button>确认提交</button>
-        </from>
-    </div>
+    <aside>
+        <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+        <!--<h3>侧栏注册窗口标题</h3>-->
+        <form action="" method="post">
+            <div>
+                <label class="tips">请输入邮箱地址：</label>
+                <input type="text" placeholder="这是一个文本输入框">
+                <p>邮箱地址请按要求格式输入</p>
+            </div>
+            <div>
+                <label class="tips">请输入密码：</label>
+                <input type="password" placeholder="这是一个文本输入框">
+            </div>
+            <div>
+                <label class="tips">请重复输入密码：</label>
+                <input type="password" placeholder="这是一个文本输入框">
+                <p>密码请为6-16位英文数字</p>
+            </div>
+            <div>
+                <label class="tips">性别</label>
+                <input type="radio" value="male" name="sex" checked>
+                <label>男</label>
+                <input type="radio" value="female" name="sex">
+                <label>女</label>
+            </div>
+            <div><label class="tips">城市</label>
+                <select>
+                    <option value="北京" selected>北京</option>
+                    <option value="上海">上海</option>
+                    <option value="广州">广州</option>
+                </select>
+            </div>
+            <div>
+                <label class="tips">爱好</label>
+                <input type="checkbox" value="sport" name="hobby">
+                <label>运动</label>
+                <input type="checkbox" value="art" name="hobby">
+                <label>艺术</label>
+                <input type="checkbox" value="science" name="hobby">
+                <label>科学</label>
+            </div>
+            <div>
+                <label class="tips">个人描述</label>
+                <textarea rows="2" cols="20" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+            </div>
+            <input type="button" class="submitButton" value="确认提交">
+        </form>
+    </aside>
 
 </article>
 </body>

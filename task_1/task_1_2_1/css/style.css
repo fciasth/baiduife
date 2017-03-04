@@ -4,10 +4,13 @@ body{
 header{
     background-color:#000000 ;
     height: 70px;
-
+}
+article,main{
+    box-shadow: 1px 1px 1px #848484;
 }
 nav{
     height: 70px;
+    padding: 20px;
 }
 nav img{
     display: inline;
@@ -24,14 +27,69 @@ nav img{
 nav ul{
     float: right;
 }
-table{border:1px solid #F00}
+table{
+    /*text-align: center;*/
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td,th{
+    border: #c6c6c6 solid 1px;
+}
 article{
     background-color: #fff;
     margin: 10px;
+    padding: 20px;
 }
-#myfrom{
+#text{
+    height: 200px;
+    width:700px;
+}
+#tables{
     text-align:center
+}
+table{
+    width: 100%;
+}
+th{
+    background-color: #000;
+    color: #fff;
+}
+tfoot{
+    background-color: #ccc;
 }
 .tip{
     color: rgba(106, 106, 106, 0.91);
+}
+
+.submitButton{
+    display: inline-block;
+    width: 1200px;
+    height: 50px;
+    background: #3355D0;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-family: microsoft YaHei;
+    font-size: 16px;
+}
+aside form div .tips {
+    float: left;
+    text-align: right;
+    width: 35%;
+    padding-right: 15px;
+}
+aside form div p {
+    margin-left: 35%;
+    padding-left: 15px;
+    font-size: 12px;
+    color: #aaa;
+}
+form label {
+    display:inline-block;
+    width:60px;
+    text-align:right;
+}
+
+div{
+    display: block;
 }
