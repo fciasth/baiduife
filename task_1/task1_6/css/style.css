@@ -280,3 +280,20 @@ main{
     height: 160px;
     width: 200px;
 }
+footer{
+    height: 61px;
+    margin: 12px 22px 0px 22px;
+    /*border-left:1px solid #000;*/
+    border-top: 2px solid #938e8c;
+    position: relative;
+}
+footer span{
+    font: 12px "黑体" ;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    padding: 1px;
+    right: 0;
+    color: #d55d5c;
+}
