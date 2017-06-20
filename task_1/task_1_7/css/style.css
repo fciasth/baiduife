@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+div{
+    display: block;
+}
+header{
+    height: 57px;
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+}
+#home{
+    position:relative;
+    left: 45px;
+    top:12px;
+    width: 200px;
+}
+#home span{
+    font-size:23px;
+
+}
+#nav{
+    top: -15px;
+    position: relative;
+    float: right;
+}
+#nav li{
+    width: 90px;
+    float: left;
+    margin-right:25px;
+    list-style-type:none;
+
+}
+#nav a{
+    text-decoration: none;
+    font-size:13px ;
+
+}
+.other-key{
+    color: #787b83;
+}
+#key{
+    color: #E25345;
+}
+
+#inst{
+    position: relative;
+}
+
+#inst img{
+    height: 746px;
+    width: 100%;
+}
+
+#new-life{
+    font-size: 60px;
+    color: #fff;
+    position: absolute;
+    top:270px;
+    left: 115px;
+}
+#life-tips{
+    font-size: 21px;
+    color: #fff;
+    top:352px;
+    left: 125px;
+    position: absolute;
+}
+#start-button{
+    background-color:#E25345;
+    color: #fff;
+    font-size: 30px;
+    width: 330px;
+    height:63px;
+    text-align: center;
+    line-height: 59px;
+    left: 125px;
+    top: 471px;
+    position: absolute;
+}
+.chart{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.chart img{
+    top:44px;
+    position: relative;
+}
+.text{
+    width: 24.93%;
+    float: left;
+    text-align: center;
+    position: relative;
+    top: 80px;
+    color: #787b83;
+
+}
+.border{
+    border-right:1px solid #787b83;
+}
+#section-block{
+    display: -webkit-box;
+}
+#title{
+    margin-top:200px ;
+    height: 360px;
+    background-color:#ECECEC;
+    text-align: center;
+}
+#title img{
+    position: relative;
+    top: 145px;
+
+}
+#title p{
+    font-size: 54px;
+    color: #A1A1A1;
+    position: relative;
+    top: 170px;
+}
+#local{
+    position: relative;
+    text-align: center;
+    height: 408px;
+}
+#map-img{
+    width: 100%;
+    height: auto;
+}
+#local-title{
+    position: relative;
+    font-size: 22px;
+    color: #fff;
+    top: -300px;
+
+}
+#local-tips{
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    top: -270px;
+}
+select{
+    /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    width: 240px;
+    height: 35px;
+    color: #ADADAD;
+    position: absolute;
+    top:204px;
+    background: url("../img/arrow.png")no-repeat scroll right center #fff;
+
+}
+#local option{
+    background-color:#e3e3e4 ;
+    color: rgba(0, 0, 0, 0.48);
+}
+#select-1{
+    left: 185px;
+}
+#select-2{
+    left: 465px;
+}
+#select-3{
+    left: 745px;
+}
+#select-button{
+    width: 235px;
+    height: 35px;
+    border: 0;
+    background-color: #BF4E48;
+    position: absolute;
+    top: 204px;
+    font-size: 14px;
+    color: #fff;
+    left:1026px;
+}
+#gallery{
+    height: 605px;
+    background-color:#f7f7f7 ;
+    text-align:center;
+    position: relative;
+}
+#gallery img{
+    position: relative;
+    top:88px;
+}
+.size-title{
+    font-size: 16px;
+    color: #000;
+}
+.size-tips{
+    font-size: 14px;
+    color: #999
+}
+.big-size-title{
+    font-size: 24px;
+    color: #000;
+    letter-spacing: 30px;
+}
+#new-world{
+    position: relative;
+}
+#BJ-title{
+    position: absolute;
+    left:340px;
+    bottom: 175px;
+}
+#BJ-tips{
+    position: absolute;
+    left:332px;
+    bottom: 150px;
+}
+#SH-title{
+    position: absolute;
+    left:533px;
+    top: 81px;
+}
+#SH-tips{
+    position: absolute;
+    left:563px;
+    top: 118px;
+}
+#SZ-title{
+    position: absolute;
+    left:869px;
+    bottom: 175px;
+}
+#SZ-tips{
+    position: absolute;
+    left:843px;
+    bottom: 150px;
+}
+#HK-title{
+    position: absolute;
+    left:1108px;
+    bottom: 175px;
+}
+#HK-tips{
+    position: absolute;
+    left:1093px;
+    bottom: 150px;
+}
+
+#world{
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    top:123px;
+    left: 355px;
+}
+#time{
+    position: absolute;
+    font-size: 145px;
+    color: #fff;
+    top: 152px;
+    left: 260px;
+}
+#world-BJ{
+    position: absolute;
+    font-size: 21px;
+    color: #fff;
+    top: 328px;
+    left: 356px;
+}
+#world-time{
+    position: absolute;
+    font-size: 21px;
+    color: #fff;
+    top: 367px;
+    left: 356px;
+}
+#tri{
+    position: absolute;
+    left: 826px;
+    top: 245px;
+}
+#right-world{
+    display: inline;
+    position: absolute;
+    font-size: 21px;
+    color: #000;
+    top: 154px;
+    right: 157px;
+}
+#right-world span{
+    color:#f00;
+}
+#right-tips{
+    display: inline;
+    position: absolute;
+    font-size: 12px;
+    color: #aaa;
+    right: 62px;
+    top: 202px;
+    line-height: 30px;
+}
+#red-button{
+    position: absolute;
+    font-size: 12px;
+    color: #e25c60;
+    text-align: center;
+    width: 105px;
+    height: 33px;
+    border: 1px #e25c60 solid;
+    right: 150px;
+    top: 356px;
+    line-height: 30px
+}
+#circle1{
+    position: absolute;
+    background-color: #929292;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    right: 221px;
+    bottom: 143px;
+}
+#circle2{
+    position: absolute;
+    background-color: #fff;
+    border: 1px #929292 solid;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    right: 195px;
+    bottom: 143px;
+}
+#circle3{
+    position: absolute;
+    background-color: #fff;
+    border: 1px #929292 solid;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    right: 169px;
+    bottom: 143px;
+}
+#more{
+    position: relative;
+}
+#red-more{
+    position: absolute;
+    width: 426px;
+    height: 521px;
+    background-color: #E8504F;
+    top: -5px;
+}
+#red-time{
+    position: absolute;
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+    top: 175px;
+    left: 130px;
+    line-height: 30px
+}
+.short-line{
+    position: absolute;
+    width: 31px;
+    height: 3px;
+    top: 260px;
+    left: 200px;
+}
+#red-more-button{
+    position: absolute;
+    width: 170px;
+    height: 44px;
+    border: 1px #fff solid;
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+    top: 290px;
+    left: 130px;
+    line-height: 40px;
+}
+#white-more{
+    position: absolute;
+    width: 426px;
+    height: 521px;
+    background-color: #fff;
+    top: -5px;
+    left:426px;
+}
+#white-time{
+    position: absolute;
+    font-size: 21px;
+    color: #000;
+    text-align: center;
+    top: 175px;
+    left: 130px;
+    line-height: 30px
+}
+#white-more-button{
+    position: absolute;
+    width: 170px;
+    height: 44px;
+    border: 1px #E8504F solid;
+    font-size: 21px;
+    color: #E8504F;
+    text-align: center;
+    top: 290px;
+    left: 130px;
+    line-height: 40px
+}
+#img-more{
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+
+
