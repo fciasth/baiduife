@@ -1,0 +1,38 @@
+main {
+    padding: 0;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    flex:none;
+}
+.box{
+
+    width: 150px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.block1,.block2,.block3{
+    border: #f00 1px solid;
+}
+.block1{
+    height: 120px;
+}
+.block2{
+    height: 100px;
+}
+.block3{
+    height: 40px;
+}
+.block4{
+    height: 200px;
+    border: #0f0 1px solid;
+    order: -1;
+
+}
+@media (max-width: 640px) {
+    main{align-items: flex-start;}
+    .block4{order: -1;}
+}
