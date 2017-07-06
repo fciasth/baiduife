@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background: #91d4da;
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    color: #fff;
+}
+header h3{
+    color: #fff;
+
+}
+header span{
+    position: absolute;
+    left: 5px;
+    font-size:1.17rem ;
+}
+header span::before{
+    content: "<";
+}
+nav ul{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style:none;
+}
+nav li{
+    display: inline-block;
+    line-height: 3rem;
+    text-align: center;
+    width: 25%;
+}
+.select-li{
+    border-bottom:.3rem solid #91d4da ;
+}
+.img-wrap img{
+    width: 100%;
+}
+.tag-group ul{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:1rem ;
+}
+.tag-group li{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+}
+.tag-group img {
+    width: 70%;
+}
+p{
+    display: block;
+    -webkit-margin-before: .1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+.col-3{
+    padding: 1rem 0;
+    border-top: solid .1rem #ccc;
+    flex: 1;
+}
+.col-3{
+    display: flex;
+    justify-content: space-around;
+}
+.col img {
+    width: 100%;
+    margin: 0 auto;
+}
+.col-3 h2,h6{
+    text-align: center;
+}
+.col h2{
+    color:#111;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.col h6{
+    color: #333;
+    font-weight: 500;
+}
+.col:not(:last-child){
+    border-right: .1rem solid #ccc;
+}
+.module{
+    border-top: 1.5rem solid #eee;
+}
+.module h2 {
+    font-size: 1.2rem;
+    color: #656565;
+    border-bottom: .2rem solid #eee;
+    margin-left: .3rem;
+}
+.module img{
+    width: 28%;
+    height: 45%;
+    margin: 0 1%;
+    border: .1rem solid #FEB832;
+}
+.module ul{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.module li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 45%;
+    text-align: center;
+    background: #eee;
+    margin: 0 3.5% 3.5% 0;
+}
+.module section{
+    display: flex;
+    margin: 1rem 0;
+}
+.item-1 li{
+    display: flex;
+    padding: .3rem;
+    border-bottom: solid .2rem #eee;
+}
+.item-1 img{
+    width: 32%;
+    height: 80%;
+}
+.item-1 div{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+}
+.item-1 h3{
+    font-size:1.2rem ;
+}
+.item-1,.item-2 p{
+    font-size: .6rem;
+    color: #c7c7c7;
+    margin: 0;
+}
+.item-2 figure{
+    display: flex;
+    margin-top: .5rem;
+}
+.item-2 img {
+    width: 32%;
+    height: 80%;
+    margin-right: .4rem;
+}
