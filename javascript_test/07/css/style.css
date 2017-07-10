@@ -1,0 +1,47 @@
+div{
+    border: 1px solid #3355d0;
+    background: #fff;
+}
+#B-tree{
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    margin: auto;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+.second{
+    width: 550px;
+    height: 400px;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+.third{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+.forth{
+    width: 99px;
+    height: 73px;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+main{
+    padding-top: 100px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
