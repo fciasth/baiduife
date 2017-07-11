@@ -1,0 +1,33 @@
+#box{
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+table{
+    text-align:right;
+}
+input{
+    border: 1.5px solid #c9c9c9;
+    height: 35px;
+    width: 550px;
+    border-radius:6px ;
+    outline: none;
+    -webkit-user-select: auto !important;
+}
+.label{
+    font: 20px bold;
+   padding-right: 15px;
+}
+#btn-search{
+    width: 85px;
+    height: 40px;
+    background: #2F79BA;
+    font: 17px bold;
+    color: #fff;
+    outline: none;
+    border: 2px solid #2F79BA;
+    border-radius:6px ;
+}
+.tip{
+    height: 27px;
+}

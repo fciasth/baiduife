@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="box">
+        <table>
+            <tbody>
+            <tr>
+                <td class="label">名称</td>
+                <td>
+                    <input type="text" id="info-name" onblur="checkNameBlur()">
+                </td>
+            </tr>
+            <tr class="tip">
+                <td></td>
+                <td id="name-tip" class="tips"></td>
+            </tr>
+            <tr>
+                <td class="label">密码</td>
+                <td>
+                    <input type="password" id="info-password" onblur="checkPasswordBlur()">
+                </td>
+            </tr>
+            <tr class="tip">
+                <td></td>
+                <td id="password-tip" class="tips password"></td>
+            </tr>
+            <tr>
+                <td class="label">密码确认</td>
+                <td>
+                    <input type="password" id="confirm-password" onblur="checkConfirmPasswordBlur()">
+                </td>
+            </tr>
+            <tr class="tip">
+                <td></td>
+                <td id="confirmPassword" class="tips password"></td>
+            </tr>
+            <tr>
+                <td class="label">邮箱</td>
+                <td>
+                    <input type="email" id="info-email" onblur="checkEmailBlur()">
+                </td>
+            </tr>
+            <tr class="tip">
+                <td></td>
+                <td id="email" class="tips"></td>
+            </tr>
+            <tr>
+                <td class="label">手机</td>
+                <td>
+                    <input type="tel" id="info-tel" onblur="checkTelBlur()">
+                </td>
+            </tr>
+            <tr class="tip">
+                <td></td>
+                <td id="tel" class="tips"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button id="btn-search">提交</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+<script src="js/script.js" type="application/javascript"></script>
+</body>
+</html>
