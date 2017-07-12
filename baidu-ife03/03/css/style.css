@@ -1,0 +1,22 @@
+nav{
+    display: flex;
+}
+div{
+    display: block;
+}
+input[type="radio"]{
+
+}
+
+.school{
+    display: none;
+}
+.show{
+    display: block;
+}
+.none{
+    display: none;
+}
+.on{
+    display: inline-block;
+}

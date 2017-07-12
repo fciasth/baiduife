@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<nav id="radio">
+    <div id="in-school">
+        <input type="radio" value="in-school" name="stage" checked="true" id="in">
+        <label for="in">在校生</label>
+    </div>
+    <div id="out-school">
+        <input type="radio" name="stage"  value="out-school" id="out">
+        <label for="out">非在校生</label>
+    </div>
+    <div class="show" id="in-block">
+        <label>城市</label>
+        <select id="city" name="city">
+            <option id="beijing" value="beijing">北京</option>
+            <option id="tianjin" value="tianjin">天津</option>
+            <option id="nanjing" value="nanjing">南京</option>
+        </select>
+        <label>学校</label>
+        <select class="school on" name="city" id="beijing-school">
+            <option>北京大学</option>
+            <option>清华大学</option>
+            <option>中国人大</option>
+        </select>
+        <select class="school" name="city" id="tianjin-school">
+            <option>天津大学</option>
+            <option>南开大学</option>
+        </select>
+        <select class="school" name="city" id="nanjing-school">
+            <option>河海大学</option>
+            <option>中国药科大学</option>
+        </select>
+    </div>
+    <div class="none" id="out-block">
+        <from>
+            <label for="address">工作地址</label>
+            <input type="text" id="address">
+        </from>
+    </div>
+</nav>
+<script src="js/script.js" type="application/javascript"></script>
+</body>
+</html>
