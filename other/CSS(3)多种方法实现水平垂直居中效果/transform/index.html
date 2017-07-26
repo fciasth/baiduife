@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            border:1px solid #000;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    hello world!
+</div>
+</body>
+</html>
+<!--CSS3中有transform属性，此属性下有一个translate移动函数，此函数接受两个参数。-->
+<!--如果两个参数都为百分比值，此时会基于自身宽度和高定进行移动。此函数移动的机制同position:relative相似。-->
+<!--优点：无需定高度。高度随内容自适应。-->
+<!--缺点：元素脱离文档流。如果需要居中的元素已经在高度上超过了视口，那它的顶部会被视口裁切掉。-->
