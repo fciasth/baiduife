@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            height: 150px;
+            width:150px;
+
+        }
+        .change1{
+            background: -moz-linear-gradient(top,#000,#fff);
+            /*Mozilla（Firefox，Flock等）*/
+            background:-webkit-linear-gradient(top,#000,#fff);
+            background: -o-linear-gradient(top,#000,#fff);/*Opera*/
+        }
+        .change2{
+            background: -moz-linear-gradient(left top,#ace,#f96);
+            background: -webkit-linear-gradient(left top,#ace,#f96);
+        }
+        .change3{
+            background: -moz-linear-gradient(left,#ace,#f96,#ace,#f96);
+            background: -webkit-linear-gradient(left,#ace,#f96,#ace,#f96);
+        }
+        .change4{
+            background: -moz-linear-gradient(left,#ace,#f96 5%,#ace,#f96 95%,#ace);
+            background: -webkit-linear-gradient(left,#ace,#f96 5%,#ace,#f96 95%,#ace);
+        }
+        .change5{
+            background: -moz-linear-gradient(30deg,#ace,#f96);
+            background: -webkit-linear-gradient(30deg,#ace,#f96);
+        }
+        .change6{
+            background: -moz-linear-gradient(right,rgba(255,255,255,0),rgba(255,255,255,1));
+            background: -webkit-linear-gradient(right,rgba(255,255,255,0),rgba(255,255,255,1)),url(http://demos.hacks.mozilla.org/openweb/resources/images/patterns/flowers-pattern.jpg);
+        }
+    </style>
+</head>
+<body>
+<div class="container change1"></div>
+<div class="container change2"></div>
+<div class="container change3"></div>
+<div class="container change4"></div>
+<div class="container change5"></div>
+<div class="container change6"></div>
+</body>
+</html>
