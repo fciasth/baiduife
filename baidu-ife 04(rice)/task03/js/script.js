@@ -44,6 +44,9 @@ p.convert = function (key,val) {
             return val;
         },
         set:function (newVal) {
+            if(typeof newVal =="object"){
+                new Observer(newVal);
+            }
 
                 console.log('你设置了'+key);
                 console.log('新的'+key+'='+val);
