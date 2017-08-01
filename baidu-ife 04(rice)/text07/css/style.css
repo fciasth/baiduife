@@ -1,0 +1,19 @@
+#menu{
+    display: none;
+    width: 120px;
+    height: auto;
+    box-shadow:0 2px 2px 0 rgba(0,0,0, .5);
+    border: 1px solid rgba(0,0,0, .2);
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+#menu ul{
+    padding: 15px;
+
+}
+#menu li{
+    margin-bottom:5px ;
+    font-size:15px ;
+}
