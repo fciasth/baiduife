@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Student(props) {
+        this.name = props.name || 'Unnamed';
+    }
+    Student.prototype.hello = function () {
+        alert('Hello, ' + this.name + '!');
+    };
+    //primaryStudent的构造函数
+    function primaryStudent(props) {
+        Student.call(this,props);
+        this.grade = props.grade ||1;
+    }
+    //空函数
+    function  F() {
+    }
+    //把F的原型指向Student.prototype
+    F.prototype = Student.prototype;
+
+    //把primaryStudent的原型指向一个新的F对象，F的对象正好指向Student.prototype
+    primaryStudent.prototype = new F();
+
+    //把primaryStudent原型的构造函数修复为primaryStudent
+    primaryStudent.prototype.constructor = primaryStudent;
+
+    //继续在primaryStudent原型函数上定义方法
+    primaryStudent.prototype.getGrade = function () {
+        return this.grade;
+    }
+    var xiaoming = new primaryStudent({
+        name:'小明',
+        grade:2
+    });
+    alert(xiaoming instanceof primaryStudent); // true
+    alert(xiaoming instanceof Student); // true
+</script>
+</body>
+</html>
